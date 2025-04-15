@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+     <!-- external css-->
+     <link rel="stylesheet" href="/services.css">
+     <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+     <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Qwigley&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header Section with Background -->
+<header class="navbar-background">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg py-2 sticky position-absolute">
+        <div class="container">
+            <!-- Brand -->
+            <a class="navbar-brand" href="#">
+                <span class="brand-title">Event</span>
+                <span class="brand-subtitle">planner</span>
+            </a>
+
+            <!-- Mobile Toggle Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="/home.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Event</a></li>
+                    <!-- Dropdown Menu -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown">
+                            More
+                        </a>
+                        <ul class="dropdown-menu" style="background-color: #fff;" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">About us</a></li>
+                            <li><a class="dropdown-item" href="#">Blog</a></li>
+                            <li><a class="dropdown-item" href="#">Contact us</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Login Link -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a>
+                    </li>
+                </ul>
+
+                <!-- Social Icons -->
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-twitter grow"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook grow"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin grow"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram grow"></i></a>
+                    <a href="#"><i class="fa-brands fa-whatsapp grow"></i></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+
+<!-- Hero Section -->
+<section class="hero-section">
+    <div class="hero-content">
+        <h1 class="display-4 fw-bold ">Services</h1>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/home.html">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Services</li>
+            </ol>
+        </nav>
+    </div>
+</section>
+
+ <!-- our service -->
+<section class="services-section py-5">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h6 class="text-muted">Our services</h6>
+        <h2 class="fw-bold text-danger">What We Offer</h2>
+      </div>
+  
+      <div class="row position-relative">
+        <!-- Left icons -->
+        <div class="col-md-1 d-none d-md-flex flex-column align-items-center justify-content-between py-4">
+          <div class="service-icon"><img src="/assets/icon1.png" alt="Icon 1"></div>
+          <div class="service-icon"><img src="/assets/icon2.png" alt="Icon 2"></div>
+          <div class="service-icon"><img src="/assets/icon3.png" alt="Icon 3"></div>
+        </div>
+  
+        <!-- Service cards -->
+        <div class="col-md-10">
+          <div class="row g-5  align-items-stretch">
+            <!-- Service Item -->
+            <div class="col-md-6">
+              <div class="service-card p-3 shadow rounded-4 h-100 text-center">
+                <img src="/assets/service1.jpg" alt="Catering and Decor" class="img-fluid rounded-3 mb-3">
+                <h5>Catering and Decor</h5>
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                <a href="#" class="btn-custom fw-semibold px-3">Read more</a>
+              </div>
+            </div>
+  
+            <!-- Service Item -->
+            <div class="col-md-6">
+              <div class="service-card p-3 shadow rounded-4 h-100 text-center">
+                <img src="/assets/service2.jpg" alt="Floral" class="img-fluid rounded-3 mb-3">
+                <h5>Floral</h5>
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                <a href="#" class="btn-custom fw-semibold px-3">Read more</a>
+              </div>
+            </div>
+  
+            <!-- Service Item -->
+            <div class="col-md-6">
+              <div class="service-card p-3 shadow rounded-4 h-100 text-center">
+                <img src="/assets/service3.jpg" alt="Photo, Video and Audio" class="img-fluid rounded-3 mb-3">
+                <h5>Photo, Video and Audio</h5>
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                <a href="#" class="btn-custom fw-semibold px-3">Read more</a>
+              </div>
+            </div>
+  
+            <!-- Service Item -->
+            <div class="col-md-6">
+              <div class="service-card p-3 shadow rounded-4 h-100 text-center">
+                <img src="/assets/service4.jpg" alt="Invitation Cards" class="img-fluid rounded-3 mb-3">
+                <h5>Invitation Cards</h5>
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                <a href="#" class="btn-custom fw-semibold px-3">Read more</a>
+              </div>
+            </div>
+  
+            <!-- Service Item -->
+            <div class="col-md-6">
+              <div class="service-card p-3 shadow rounded-4 h-100 text-center">
+                <img src="/assets/service5.jpg" alt="Entertainment" class="img-fluid rounded-3 mb-3">
+                <h5>Entertainment</h5>
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                <a href="#" class="btn-custom  fw-semibold px-3">Read more</a>
+              </div>
+            </div>
+  
+            <!-- Service Item -->
+            <div class="col-md-6">
+              <div class="service-card p-3 shadow rounded-4 h-100 text-center">
+                <img src="/assets/service6.jpg" alt="Venue Selection" class="img-fluid rounded-3 mb-3">
+                <h5>Venue Selection</h5>
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                <a href="#" class="btn-custom  fw-semibold px-3">Read more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Right icons -->
+        <div class="col-md-1 d-none d-md-flex flex-column align-items-center justify-content-between py-4">
+          <div class="service-icon"><img src="/assets/icon4.png" alt="Icon 4"></div>
+          <div class="service-icon"><img src="/assets/icon5.png" alt="Icon 5"></div>
+          <div class="service-icon"><img src="/assets/icon6.png" alt="Icon 6"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+                <!-- our gallery -->
+  <!-- <section class="gallery-section py-5">
+    <div class="container text-center mb-5">
+      <h6 class="text-primary mb-2" style="color: #d63384;">Our Gallery</h6>
+      <h2 class="fw-bold mb-3">Captured Best Event With Evenizer</h2>
+      <p class="text-muted">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam.
+      </p>
+    </div>
+  
+    <div class="container">
+      <div class="row g-3">
+        <First Column -->
+        <!-- <div class="col-md-4">
+          <div class="gallery-item">
+            <img src="/assets/gellary1.jpg" class="img-fluid rounded" alt="Event Image">
+          </div>
+          <div class="gallery-item mt-3">
+            <img src="/assets/gellary2.jpg" class="img-fluid rounded" alt="Event Image">
+          </div> -->
+        <!-- </div> -->
+  
+        <!-- Second Column -->
+        <!-- <div class="col-md-4">
+          <div class="gallery-item">
+            <img src="/assets/gellary3.jpg" class="img-fluid rounded" alt="Event Image">
+          </div>
+          <div class="gallery-item mt-3">
+            <img src="/assets/gellary4.jpg" class="img-fluid rounded" alt="Event Image">
+          </div>
+        </div> -->
+  
+        <!-- Third Column -->
+        <!-- <div class="col-md-4">
+          <div class="gallery-item mb-3">
+            <img src="/assets/gellary5.jpg" class="img-fluid rounded" alt="Event Image">
+          </div>
+          <div class="gallery-item">
+            <img src="/assets/gellary6.jpg" class="img-fluid rounded" alt="Event Image">
+          </div>
+        </div>
+      </div>
+    </div>
+    </section> --> 
+
+
+    
+    
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
