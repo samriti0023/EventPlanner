@@ -1,0 +1,153 @@
+.navbar {
+    background:#ffdc86; 
+    top: 7px;
+    width:93%;
+    z-index: 1000;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    margin:40px;
+    border-radius:10px;
+}
+.navbar-brand {
+    font-family: 'Qwigley', cursive;
+    display: flex;
+    letter-spacing: 2px;
+    align-items: center;
+}
+
+.navbar-brand .brand-title,
+.navbar-brand .brand-subtitle {
+    color: #E52020;
+    font-weight: bold;
+}
+
+.navbar-brand .brand-title {
+    font-size: 40px;
+}
+
+.navbar-brand .brand-subtitle {
+    font-size: 32px;
+}
+
+/* Navbar Links & Dropdown */
+.navbar-nav .nav-link,
+.dropdown-menu .dropdown-item {
+    color: #E52020;
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+    transition: all 0.3s ease;
+    padding: 8px 15px;
+}
+
+.navbar-nav .nav-link:hover,
+.dropdown-menu .dropdown-item:hover {
+    transform: translateY(-3px);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.navbar-nav .nav-link::before,
+.dropdown-menu .dropdown-item::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background-color: #E52020;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::before,
+.dropdown-menu .dropdown-item:hover::before {
+    transform: scaleX(1);
+}
+.dropdown-menu {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 8px 0;
+    transition: all 0.3s ease;
+}
+
+/* Social Icons */
+.social-icons a {
+    color: #E52020;
+    font-size: 18px;
+    margin-left: 10px;
+    display: inline-block;
+    transition: all 0.2s ease-in-out;
+}
+
+.social-icons a:hover {
+    color: #e73636;
+    transform: scale(1.5);
+}
+
+/* Background section */
+.hero-section {
+    position: relative;
+    background: url('/assets/image4.jpg') no-repeat center center/cover;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+
+/* Overlay for dark effect */
+.hero-section::after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+/* Hero text content */
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+.hero-content h1{
+    color: #fff;
+    font-size:30px;
+    margin-top:100px;
+}
+
+.breadcrumb {
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    color: #fff;
+}
+
+.breadcrumb-item a {
+    color:#fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav .breadcrumb .breadcrumb-item.active {
+    color: #E52020;
+    font-weight: bold;
+}
+
+
+
+/* If needed, adjust media queries for responsiveness */
+@media (max-width: 768px) {
+    .navbar-background {
+        height: 200px;
+    }
+    .navbar {
+        width: 95%;
+        top: 20px;
+    }
+}

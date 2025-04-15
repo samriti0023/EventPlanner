@@ -46,8 +46,8 @@
             <div class="collapse navbar-collapse " id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="/home.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Event</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/event.html">Event</a></li>
                     <!-- Dropdown Menu -->
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -130,7 +130,7 @@
         <div class="row align-items-center">
             <!-- Image Section -->
 
-            <div class="col-lg-6 col-md-12 position-relative mt-4" data-aos="fade-right" data-aos-delay="100">
+            <div class="col-lg-6 col-md-12 position-relative mt-4" data-aos="fade-right" >
                 <img src="/assets/dancing-party.jpg" class="img-fluid " alt="Party Image"
                     style="width:50%;  height:40%; margin-left:10%; border: 10px solid #ffdc86;  ">
                 <img src="/assets/concert image.jpg"
@@ -141,7 +141,7 @@
 
             <!-- Content Section -->
 
-            <div class="col-lg-6 col-md-12 mt-4" data-aos="fade-down" data-aos-delay="100">
+            <div class="col-lg-6 col-md-12 mt-4" data-aos="fade-down" >
                 <h6 class="text" style="color:#E52020; font-weight: bolder;">About Evenizer</h6>
                 <h2 class="fw-bold" style="color:#333333;">We Are The Best Event Planner & Organizer In Town</h2>
                 <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -248,7 +248,7 @@
                 incididunt ut labore et dolore magna aliqua.</p>
 
             <!-- Birthday Party -->
-                <div class="row align-items-center mb-4 " data-aos="fade-up-right" data-aos-delay="100">
+                <div class="row align-items-center mb-4 " data-aos="fade-up-right" >
                     <div class="col-md-2 col-12 text-center mb-3 mb-md-0">
                         <h3 class="fw-bold">30</h3>
                         <p class="text-muted">August 2025</p>
@@ -271,7 +271,7 @@
             </div>
             <!-- Music Concert -->
 
-            <div class="row align-items-center bg-light p-4 rounded mb-5" data-aos="fade-up-left" data-aos-delay="100">
+            <div class="row align-items-center bg-light p-4 rounded mb-5" data-aos="fade-up-left" >
                 <div class="col-md-2 col-12 text-center mb-3 mb-md-0">
                     <a href="#" class="btn-custom mb-3">Learn More</a>
                 </div>
@@ -293,7 +293,7 @@
             </div>
 
             <!-- Wedding Party -->
-            <div class="row align-items-center mb-3" data-aos="fade-up-right" data-aos-delay="100">
+            <div class="row align-items-center mb-3" data-aos="fade-up-right" >
                 <div class="col-md-2 col-12 text-center mb-3 mb-md-0">
                     <h3 class="fw-bold">08</h3>
                     <p class="text-muted">September 2025</p>
@@ -326,7 +326,7 @@
       <div class="row justify-content-center">
   
         <!-- Team Member 1 -->
-        <div class="col-md-4 col-sm-6 mb-4">
+        <div class="col-md-3 col-sm-5 mb-4">
           <div class="card border-0 shadow-sm h-100">
             <img src="/assets/ourteam_member1.jpg" class="card-img-top" alt="Name">
             <div class="card-body-team">
@@ -342,7 +342,7 @@
         </div>
   
         <!-- Team Member 2 -->
-        <div class="col-md-4 col-sm-6 mb-4">
+        <div class="col-md-3 col-sm-5 mb-4">
           <div class="card border-0 shadow-sm h-100">
             <img src="/assets/ourteam_member2.jpg" class="card-img-top" alt="Name">
             <div class="card-body-team">
@@ -358,7 +358,7 @@
         </div>
   
         <!-- Team Member 3 -->
-        <div class="col-md-4 col-sm-6 mb-4">
+        <div class="col-md-3 col-sm-5 mb-4">
           <div class="card border-0 shadow-sm h-100">
             <img src="/assets/ourteam_member3.jpg" class="card-img-top" alt="Name">
             <div class="card-body-team">
@@ -557,7 +557,14 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        AOS.init();
+        AOS.init({
+        duration: 1200,
+        easing : "ease-in-out",
+        once: true,
+        mirror: false,
+        anchorPlacement: 'top-bottom',
+        });
+        
     </script>
 
 
